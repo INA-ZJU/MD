@@ -1,0 +1,499 @@
+body{
+	padding-left: 35px ;
+	padding-right: 20px;
+	margin: 0;
+	background: #000;
+	display:table;
+}
+.container{
+	margin: 0 auto;
+	display:table-cell;
+	text-align:center;
+	vertical-align:middle;
+}
+.close{
+	position: absolute;
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+    /*background: red;*/
+}
+/*头部logo两种图样式*/
+.header {
+	margin-bottom: 70px;
+	position: relative;
+	z-index: 2;
+}
+.logo1{ /*第一张logo图定位*/
+	line-height: 80px;
+    /*padding-left: 30px;*/
+}
+.header img{ /*两张图片垂直居中*/
+	vertical-align: middle;
+}
+.logo2{ /*第二张logo图定位*/
+	position: absolute;
+    top: 0;
+    right: 30px;
+    line-height: 80px;
+}
+
+/*左边导航栏样式设置*/
+ul, li {
+	position: relative;
+	z-index: 2;
+	list-style: none;
+	padding:0;
+	margin: 0;
+}
+.left_nav {
+	margin-top: 80px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.left_nav li{ /*制作左边导航栏小圆点*/
+	width: 30px; 
+	height: 25px;
+	margin-top: 0px;
+	text-align: center;
+}
+.left_nav li span{ /*制作左边导航栏小圆点*/
+	display: inline-block;
+	width: 10px; 
+	height: 10px;
+	border-radius: 50%;
+	background: #fff;
+}
+.left_nav li.active {
+	margin: 10px 0;
+}
+.left_nav li.active span{
+	width: 25px; 
+	height: 25px;
+	text-align: center;
+	line-height: 25px;
+	background: transparent;
+	border: 1px solid #fff;
+	color: #fff;
+}
+
+/*第一次进入时,*/
+.section_zero {
+	display: inline-block;
+	vertical-align: middle;
+	/*margin-left: 300px;*/
+	margin-bottom: 40px;
+}
+.section_zero li{
+	margin: 0 auto;
+	width: 300px;
+    height: 50px;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+}
+li.section_zero_a {
+	background: #F2F2F2;
+}
+li.section_zero_b {
+	background: #CCCCCC;
+}
+li.section_zero_c {
+	background: #B3B3B3;
+}
+li.section_zero_d {
+	background: #808080;
+}
+li.section_zero_e {
+	background: #4D4D4D;
+}
+
+/*第一张,*/
+.section_one {
+	display: inline-block;
+	vertical-align: middle;
+	/*margin-left: 300px;*/
+}
+.section_one li{
+	width: 300px;
+    height: 50px;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+}
+li.section_one_a {
+	height: 300px;
+    width: 320px;
+    left: -10px;
+    position: relative;
+    z-index: 3;
+    top: 13px;
+    opacity: 0.8;
+	
+	background-image: url(../images/section_one_img.jpg);
+	/*background: #E6FFFB;*/
+}
+.section_one_a_content {
+	height: 76%;
+	width: 100%;
+	opacity: 0.8;
+	background: #93165F;/*修改当前模块的背景颜色*/
+	padding-top: 72px;
+}
+.section_one_a_content_title{
+	font-size: 20px;
+    border-bottom: 1px solid #fff;
+    width: 43%;
+    margin: 0 auto;
+    line-height: 40px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.section_one_bth {
+	display: inline-block;
+    padding: 5px 15px;
+    border: 1px solid #fff;
+    margin-top: 70px;
+    font-size: 12px;
+}
+li.section_one_b {
+	background: #a21869;/*修改对应的条的背景颜色*/
+}
+li.section_one_c {
+	background: #8f105a;/*修改对应的条的背景颜色*/
+}
+
+li.section_one_d {
+	/*position: relative;
+    z-index: 2;
+    top: -26px;*/
+	background: #840a51;/*修改对应的条的背景颜色*/
+	
+}
+li.section_one_e {
+	/*position: relative;
+    z-index: 2;
+    top: -26px;*/
+	background: #760547;/*修改对应的条的背景颜色*/
+}
+/*第二张,*/
+.section_two{
+	display: inline-block;
+	vertical-align: middle;
+	/*margin-left: 300px;*/
+}
+.section_two li{
+	width: 300px;
+    height: 50px;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+}
+li.section_two_a {
+	position: relative;
+    z-index: 2;
+    top: 26px;
+	background: #6ad93c;/*修改对应的条的背景颜色*/
+}
+
+li.section_two_b {
+	height: 300px;
+    width: 320px;
+    left: -10px;
+    position: relative;
+    z-index: 3;
+    top: 13px;
+    opacity: 0.8;
+	
+	background-image: url(../images/section_one_img.jpg);
+	/*background: #a21869;*/
+}
+.section_two_b_content {
+	height: 76%;
+	width: 100%;
+	opacity: 0.8;
+	background: #56b72d; /*修改当前模块的背景颜色*/
+	padding-top: 72px;
+}
+.section_two_b_content_title{
+	font-size: 20px;
+    border-bottom: 1px solid #fff;
+    width: 43%;
+    margin: 0 auto;
+    line-height: 40px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.section_two_bth {
+	display: inline-block;
+    padding: 5px 15px;
+    border: 1px solid #fff;
+    margin-top: 70px;
+    font-size: 12px;
+}
+li.section_two_c {
+	background: #378f12;/*修改对应的条的背景颜色*/
+}
+
+li.section_two_d {
+	/*position: relative;
+    z-index: 2;
+    top: -26px;*/
+	background: #2f840b;/*修改对应的条的背景颜色*/
+	
+}
+li.section_two_e {
+	/*position: relative;
+    z-index: 2;
+    top: -26px;*/
+	background: #267605;/*修改对应的条的背景颜色*/
+}
+/*第三张,*/
+.section_three {
+	display: inline-block;
+	vertical-align: middle;
+	/*margin-left: 300px;*/
+}
+.section_three li{
+	width: 300px;
+    height: 50px;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+}
+li.section_three_a {
+	background: #E6FFFB;/*修改对应的条的背景颜色*/
+}
+li.section_three_b {
+	background: #87E8DE;/*修改对应的条的背景颜色*/
+}
+li.section_three_c {
+	height: 300px;
+    width: 320px;
+    left: -10px;
+    position: relative;
+    z-index: 3;
+    top: -13px;
+    opacity: 0.8;
+	
+	background-image: url(../images/section_one_img.jpg);
+}
+.section_three_c_content {
+	height: 76%;
+	width: 100%;
+	opacity: 0.8;
+	background: #36A1A5;/*修改当前模块的背景颜色*/
+	padding-top: 72px;
+}
+.section_three_c_content_title{
+	font-size: 20px;
+    border-bottom: 1px solid #fff;
+    width: 43%;
+    margin: 0 auto;
+    line-height: 40px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.section_three_bth {
+	display: inline-block;
+    padding: 5px 15px;
+    border: 1px solid #fff;
+    margin-top: 70px;
+    font-size: 12px;
+}
+li.section_three_d {
+	position: relative;
+    z-index: 2;
+    top: -26px;
+	background: #006D75;/*修改对应的条的背景颜色*/
+	
+}
+li.section_three_e {
+	position: relative;
+    z-index: 2;
+    top: -26px;
+	background: #00474F;/*修改对应的条的背景颜色*/
+}
+/*第四张,*/
+.section_foth {
+	display: inline-block;
+	vertical-align: middle;
+	/*margin-left: 300px;*/
+}
+.section_foth li{
+	width: 300px;
+    height: 50px;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+}
+li.section_foth_a {
+	background: #7150a8;/*修改对应的条的背景颜色*/
+}
+li.section_foth_b {
+	background: #5f389e;/*修改对应的条的背景颜色*/
+}
+li.section_foth_c {
+	position: relative;
+    z-index: 2;
+    /*top: -26px;*/
+	background: #512992;/*修改对应的条的背景颜色*/
+}
+
+li.section_foth_d {
+	height: 300px;
+    width: 320px;
+    left: -10px;
+    position: relative;
+    z-index: 3;
+    top: -13px;
+    opacity: 0.8;
+	
+	background-image: url(../images/section_one_img.jpg);
+	
+	
+}
+.section_foth_d_content {
+	height: 76%;
+	width: 100%;
+	opacity: 0.8;
+	background:#2e0d65;/*修改当前模块的背景颜色*/
+	padding-top: 72px;
+}
+.section_foth_d_content_title{
+	font-size: 20px;
+    border-bottom: 1px solid #fff;
+    width: 43%;
+    margin: 0 auto;
+    line-height: 40px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.section_foth_bth {
+	display: inline-block;
+    padding: 5px 15px;
+    border: 1px solid #fff;
+    margin-top: 70px;
+    font-size: 12px;
+}
+li.section_foth_e {
+	position: relative;
+    z-index: 2;
+    top: -26px;
+	background: #260857;/*修改对应的条的背景颜色*/
+}
+/*第五张,*/
+.section_five {
+	display: inline-block;
+	vertical-align: middle;
+	/*margin-left: 300px;*/
+}
+.section_five li{
+	width: 300px;
+    height: 50px;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+}
+li.section_five_a {
+	background: #509cee;/*修改对应的条的背景颜色*/
+}
+li.section_five_b {
+	background: #4c94e3;/*修改对应的条的背景颜色*/
+}
+li.section_five_c {
+	background: #337bc8;/*修改对应的条的背景颜色*/
+}
+
+li.section_five_d {
+	position: relative;
+    z-index: 2;
+    /*top: -26px;*/
+	background: #1057a5;/*修改对应的条的背景颜色*/
+}
+
+li.section_five_e {
+	height: 300px;
+    width: 320px;
+    left: -10px;
+    position: relative;
+    z-index: 3;
+    top: -13px;
+    opacity: 0.8;
+	
+	background-image: url(../images/section_one_img.jpg);
+	
+	
+}
+.section_five_e_content {
+	height: 76%;
+	width: 100%;
+	opacity: 0.8;
+	background:#023b79;/*修改当前模块的背景颜色*/
+	padding-top: 72px;
+}
+.section_five_e_content_title{
+	font-size: 20px;
+    border-bottom: 1px solid #fff;
+    width: 43%;
+    margin: 0 auto;
+    line-height: 40px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.section_five_bth {
+	display: inline-block;
+    padding: 5px 15px;
+    border: 1px solid #fff;
+    margin-top: 70px;
+    font-size: 12px;
+}
+
+/*右下角5个图标*/
+.foot_nav {
+	display: inline-block;
+	vertical-align: bottom;
+}
+.foot_nav li{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	background:#bfbfbf ;
+	margin-left: 10px;
+}
+.foot_nav li span{
+	display: inline-block;
+    position: relative;
+    top: 6px;
+    left: 6px;
+    width: 40px;
+    height: 40px;
+    opacity: 0.8;
+}
+.foot_nav_one {
+	background: #93165f;
+}
+.foot_nav_two {
+	
+	background: #2a770a;
+}
+.foot_nav_three {
+	background: #067175;
+}
+.foot_nav_foth {
+	background: #3e1680;
+	
+}
+.foot_nav_five {
+	background: #0752a3;
+}
+
+a:link,a:visited{
+	text-decoration:none;
+	color:white;
+}
+
+a:hover,a:active{
+	text-decoration:none;
+	color:#fadf66;
+}

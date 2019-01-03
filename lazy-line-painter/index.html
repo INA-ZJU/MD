@@ -1,0 +1,75 @@
+ 
+    <!DOCTYPE html>
+      <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+      <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+      <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+      <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+      <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Lazy Line Painter</title>
+        <meta name="description" content="A modern JS library for SVG path animation">
+
+        <!-- css  -->
+        <style>
+
+          body, html {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top:0;
+            left:0;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+
+            #INA3 {
+              width: 70vw;
+              height: 70vh;
+              position: relative;
+              overflow: visible;
+            }
+        </style>
+     
+        <!-- Include lazylinepainter -->
+        <script src="lazy-line-painter-1.9.1.min.js"></script>
+
+        <script type="text/javascript">
+
+          (function(){ 
+
+            document.onreadystatechange = () => {
+
+              if (document.readyState === 'complete') {
+                        
+                /**
+                 * Setup your Lazy Line element.
+                 * see README file for more settings
+                 */
+
+                let el = document.querySelector('#INA3');
+                let myAnimation = new LazyLinePainter(el, {"ease":"easeOutQuint","strokeWidth":1,"strokeOpacity":1,"reverse":true}); 
+                myAnimation.paint(); 
+              }
+            }
+
+          })();
+
+        </script>
+      </head>
+
+      <body>
+        <svg version="1.1" id="INA3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 366.3 361.2" style="enable-background:new 0 0 366.3 361.2;" xml:space="preserve" data-llp-composed="true" class="lazy-line-painter">
+<style type="text/css">
+	.st0{fill:none;stroke:#FBB03B;stroke-miterlimit:10;}
+</style>
+<title>INA-3</title>
+<g>
+	<path class="st0" d="M325.7,1.5c-6.2,0.1-12,1.6-17.1,4.2c-7.2,3.5-13.3,9.4-17.3,17.1l-68.3,134v-109c2.8-16.3-5-33.1-20.5-41.1&#10;&#9;&#9;L201,6c-17.1-8.6-37.6-3.4-48.6,11.5c-2.2,2.9-4.1,6.1-5.4,9.5L81,156.6v-28.4c0-21.7-17.6-39.4-39.4-39.4&#10;&#9;&#9;c-21.7,0-39.4,17.6-39.4,39.4v191.2c-0.1,4.2,0.5,8.4,1.7,12.4c0,0.1,0.1,0.3,0.1,0.4c0.1,0.3,0.2,0.6,0.3,0.9&#10;&#9;&#9;c0.1,0.4,0.2,0.7,0.4,1.1l0,0c5.1,13.5,17.4,23.6,32.3,25.3c1.7,0.2,3.5,0.4,5.2,0.4c14.5,0,27.8-8.2,34.5-21.1l67.5-132.5v110.4&#10;&#9;&#9;c-1.7,13.9,4.4,28,16.2,36.3c3.5,2.6,7.5,4.6,11.9,5.9c3.8,1.2,7.7,1.9,11.7,1.9c4.1,0,8.1-0.7,12-1.9c9.7-3.2,17.8-10.1,22.4-19.2&#10;&#9;&#9;l68.5-134.4V321c0,21.8,17.6,39.5,39.4,39.5c21.8-0.1,39.4-17.7,39.5-39.5V41.6c0-0.5,0-0.9,0-1.3C365.4,18.5,347.5,1.2,325.7,1.5z&#10;&#9;&#9; M326.3,12.1c16.2,0.1,29.4,13.2,29.5,29.5v0.8c-0.2,3.9-1.2,7.9-3.1,11.6l-55.8,109.6V41.5C296.9,25.3,310.1,12.1,326.3,12.1z&#10;&#9;&#9; M156.2,30.8l1.8-3.5c0.6-1.2,1.3-2.4,2.1-3.5c5.4-7.1,13.9-11.7,23.5-11.7c16.2,0.1,29.4,13.2,29.4,29.5v5.5&#10;&#9;&#9;c-0.5,2.4-1.3,4.7-2.5,7l-56.3,110.5V41.5C154.2,37.7,154.9,34.1,156.2,30.8z M41.6,98.7C57.8,98.8,71,111.9,71,128.2v48&#10;&#9;&#9;L12.2,291.6V128.1C12.2,111.9,25.3,98.7,41.6,98.7z M41.6,349.7c-2.5,0-4.9-0.3-7.3-0.9c-1.7-0.5-3.4-1.2-5-2l-1.5-0.8&#10;&#9;&#9;c-4.4-2.3-8-5.5-10.7-9.4c-3.1-4.7-4.9-10.3-4.9-16.3v-1.2c0.2-3.9,1.2-7.9,3.1-11.6L71,198.1v122.3&#10;&#9;&#9;C71,336.6,57.8,349.7,41.6,349.7z M81,308.4V178.5l63.2-124.1v129.9L81,308.4z M213,71.3v105.2l-58.8,115.4V186.7L213,71.3z&#10;&#9;&#9; M184.7,349.3c-16.2,0.6-29.9-12.1-30.5-28.3v-3.1c0.4-3.3,1.3-6.5,2.9-9.6L213,198.6V321C212.5,336.4,200.1,348.7,184.7,349.3z&#10;&#9;&#9; M223,308.8V179l63.9-125.4v129.7L223,308.8z M326.9,349.9c-16.3,0.3-29.7-12.6-30-28.9V185.6L355.8,70v251&#10;&#9;&#9;C355.5,336.8,342.7,349.6,326.9,349.9z" data-llp-id="INA3-0" data-llp-duration="4510" data-llp-delay="0" fill-opacity="0" style=""/>
+	<path class="st0" d="M41.6,82.7c22.7-0.1,41-18.4,41.1-41.1c0-22.7-18.4-41.1-41.1-41.1S0.5,18.9,0.5,41.6S18.9,82.7,41.6,82.7z&#10;&#9;&#9; M41.6,10.5c17.1,0,31,13.9,31.1,31.1c0,17.2-13.9,31.1-31.1,31.1S10.5,58.8,10.5,41.6C10.5,24.4,24.4,10.5,41.6,10.5z" data-llp-id="INA3-1" data-llp-duration="4510" data-llp-delay="0" fill-opacity="0" style=""/>
+</g>
+</svg>
+      </body>
+    </html>

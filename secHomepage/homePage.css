@@ -1,0 +1,63 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    background: #1a1a1a;
+    margin: 0;
+    padding: 0;
+
+    letter-spacing:5px;
+    color: white;
+    font-weight: bold;
+    display:table;
+}
+.content{
+    display:table-cell;
+    text-align:center;
+    vertical-align:middle;
+}
+
+/*.div-relative{position:relative; color:#000; border:1px solid #000; width:500px; height:400px}*/
+.heading{
+    color:#666666;
+    font-size: 15px;
+    margin-bottom:20px;
+    position:relative;
+    z-index: 100;
+    /*过渡动画*/
+    transition:color 1s , font-weight 2s , text-decoration 1s , letter-spacing 2s;
+    -moz-transition:color 1s , font-weight 2s , text-decoration 1s , letter-spacing 2s; /* Firefox 4 */
+    -webkit-transition:color 1s , font-weight 2s , text-decoration 1s , letter-spacing 2s; /* Safari and Chrome */
+    -o-transition:color 1s , font-weight 2s , text-decoration 1s , letter-spacing 2s; /* Opera */
+}
+
+.subheading{
+    position:absolute; left:400px; top:-10px; /*background:#F00;*/ width:200px; height:100px;z-index:-999;
+}
+.heading:hover{
+    color: #fadf66;
+    font-weight: bolder;
+    text-decoration:underline;
+    letter-spacing:10px;
+}
+
+.subheading{
+    position: absolute;
+    color:#666666;
+    display: none;
+    font-size: 30px;
+}
+
+#headProject:hover > #subheadProject {display: inline;}
+
+a:link,a:visited{
+    text-decoration:none;
+    color:#666666;
+}
+
+a:hover,a:active{
+    text-decoration:none;
+    color:#fadf66;
+}

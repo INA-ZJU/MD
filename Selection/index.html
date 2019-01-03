@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title></title>
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.css"/>
+	<link rel="stylesheet" type="text/css" href="index.css"/>
+	<script src="vue.js"></script>
+	<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.js"></script>
+</head>
+<body>
+	<div id='index' >
+		<div class="close" v-on:mouseover="firstLeave">
+			
+		</div>
+
+		<!--头部logo,两张图-->
+		<div class="header">
+			<div class="logo1"><img src="../images/logo1.jpg" alt="" /></div>
+			<div class="logo2"><img src="../images/logo2.jpg" alt="" /></div>
+		</div>
+
+		<div class="container">
+			<div class="row" style="margin-top: 40px;color: white">
+				<div class="col-xs-2  col-sm-2 col-md-2 col-lg-2"  >
+					<!--左边导航栏-->
+					<ul class="left_nav">
+						<li class="active left_nav_zero"><span>0</span></li>
+						<li  class="left_nav_one"><span></span></li>
+						<li  class="left_nav_two"><span></span></li>
+						<li  class="left_nav_three"><span></span></li>
+						<li  class="left_nav_foth"><span></span></li>
+						<li  class="left_nav_five"><span></span></li>
+					</ul>
+				</div>
+				<div class="col-xs-10 col-sm-6 col-md-6 col-lg-6"  >
+					<!--第一次进入页面时-->
+					<ul class="section_zero" style="display: inline-block;">
+						<li>项目展示</li>
+						<li  class="section_zero_a" v-on:mouseover="first" ></li>
+						<li  class="section_zero_b" v-on:mouseover="second"  ></li>
+						<li  class="section_zero_c" v-on:mouseover="three"  ></li>
+						<li  class="section_zero_d" v-on:mouseover="fonth"  ></li>
+						<li  class="section_zero_e" v-on:mouseover="five"  ></li>
+					</ul>
+
+					<!--第一张-->
+					<ul class="section_one" style="display: none;">
+						<li  class="section_one_a">
+							<div class="section_one_a_content">
+								<div>01</div>
+								<div class="section_one_a_content_title">zhubiz</div>
+								<div>这里是一段严谨又不失风趣的自我介绍</div>
+								<a href="../Projects/proj.html"><span class="section_one_bth">项目详情</span></a>
+							</div>
+						</li>
+						<li  class="section_one_b" v-on:mouseover="second" > </li>
+						<li  class="section_one_c" v-on:mouseover="three" ></li>
+						<li  class="section_one_d" v-on:mouseover="fonth"></li>
+						<li  class="section_one_e" v-on:mouseover="five" ></li>
+					</ul>
+					<!--第二张-->
+					<ul class="section_two" style="display: none;">
+						<li  class="section_two_a" v-on:mouseover="first"></li>
+						<li  class="section_two_b">
+							<div class="section_two_b_content">
+								<div>02</div>
+								<div class="section_two_b_content_title">zhubiz</div>
+								<div>这里是一段严谨又不失风趣的自我介绍</div>
+								<a href="../Projects/proj.html"><span class="section_two_bth">项目详情</span></a>
+							</div>
+						</li>
+						<li  class="section_two_c" v-on:mouseover="three"></li>
+						<li  class="section_two_d" v-on:mouseover="fonth"></li>
+						<li  class="section_two_e" v-on:mouseover="five"></li>
+					</ul>
+					<!--第三张-->
+					<ul class="section_three" style="display: none;">
+						<li  class="section_three_a" v-on:mouseover="first"></li>
+						<li  class="section_three_b" v-on:mouseover="second"></li>
+						<li  class="section_three_c">
+							<div class="section_three_c_content">
+								<div>03</div>
+								<div class="section_three_c_content_title">zhubiz</div>
+								<div>这里是一段严谨又不失风趣的自我介绍</div>
+								<a href="../Projects/proj.html"><span class="section_three_bth">项目详情</span></a>
+							</div>
+
+						</li>
+						<li  class="section_three_d" v-on:mouseover="fonth"></li>
+						<li  class="section_three_e" v-on:mouseover="five"></li>
+					</ul>
+					<!--第四张-->
+					<ul class="section_foth" style="display: none;">
+						<li  class="section_foth_a" v-on:mouseover="first"></li>
+						<li  class="section_foth_b" v-on:mouseover="second"></li>
+						<li  class="section_foth_c" v-on:mouseover="three"></li>
+						<li  class="section_foth_d">
+							<div class="section_foth_d_content">
+								<div>04</div>
+								<div class="section_foth_d_content_title">zhubiz</div>
+								<div>这里是一段严谨又不失风趣的自我介绍</div>
+								<a href="../Projects/proj.html"><span class="section_four_bth">项目详情</span></a>
+							</div>
+						</li>
+						<li  class="section_foth_e" v-on:mouseover="five"></li>
+					</ul>
+					<!--第五张-->
+					<ul class="section_five" style="display: none;">
+						<li  class="section_five_a" v-on:mouseover="first"></li>
+						<li  class="section_five_b" v-on:mouseover="second"></li>
+						<li  class="section_five_c" v-on:mouseover="three"></li>
+						<li  class="section_five_d" v-on:mouseover="fonth"></li>
+						<li  class="section_five_e">
+							<div class="section_five_e_content">
+								<div>05</div>
+								<div class="section_five_e_content_title">zhubiz</div>
+								<div>这里是一段严谨又不失风趣的自我介绍</div>
+								<a href="../Projects/proj.html"><span class="section_five_bth">项目详情</span></a>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4" >
+					<ul class="foot_nav">
+						<li><span class="foot_nav_one"> </span></li>
+						<li><span class="foot_nav_two"></span></li>
+						<li><span class="foot_nav_three"></span></li>
+						<li><span class="foot_nav_foth"></span></li>
+						<li><span class="foot_nav_five"></span></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+		
+	<script src="index.js"></script>
+</body>
+</html>
